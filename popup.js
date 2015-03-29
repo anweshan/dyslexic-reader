@@ -1,4 +1,4 @@
-window.addEventListener("dblclick", function(event) { 
+window.addEventListener("dblclick", function(event) {
 
 
 	alertWithText()});
@@ -23,3 +23,7 @@ function alertWithText() {
     	}
     }
 }
+
+window.speechSynthesis.speak(
+   new SpeechSynthesisUtterance("Got selected text |" + selectedText+ "|")
+);
