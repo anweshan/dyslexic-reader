@@ -1,1 +1,4 @@
-window.addEventListener("mouseup", function(event) { alert("hi")});
+window.addEventListener("dblclick", function(event) { 
+
+
+	alert("hi")});
