@@ -1,7 +1,7 @@
 window.addEventListener("dblclick", function(event) {
 
 
-	alertWithText()});
+    alertWithText()});
 
 
 
@@ -18,13 +18,13 @@ function getSelectedText() {
 function alertWithText() {
     var selectedText = getSelectedText().trim();
     if (selectedText) {
-    	if (selectedText!=""){
+        if (selectedText!=""){
             initHover(selectedText);
-        	//alert("You got selected text |" + selectedText+ "|");
-        	//window.speechSynthesis.speak(
-   		//new SpeechSynthesisUtterance(selectedText)
+            //alert("You got selected text |" + selectedText+ "|");
+            //window.speechSynthesis.speak(
+        //new SpeechSynthesisUtterance(selectedText)
 //);
-    	}
+        }
     }
 }
 
