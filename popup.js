@@ -20,7 +20,8 @@ document.addEventListener('mousedown', function (e) {
 
 // Move that bubble to the appropriate location.
 function renderBubble(mouseX, mouseY, selection) {
-  bubbleDOM.innerHTML = selection + '<img id="sound" src="http://png-5.findicons.com/files/icons/770/token_dark/256/sound.png " style="width:30px;height:30px">'+'<img id="test" src="http://vignette4.wikia.nocookie.net/fantendo/images/5/52/Mushroom2.PNG/revision/latest?cb=20111123224555.png " style="width:120px;height:120px">' ;
+  bubbleDOM.innerHTML = selection + '<img id="sound" src="http://png-5.findicons.com/files/icons/770/token_dark/256/sound.png " style="width:30px;height:30px">'+
+  '<img id="test" src="http://upload.wikimedia.org/wikipedia/en/6/6f/KennyMcCormick.png" style="width:120px;height:120px">' ;
 
       document.getElementById("sound").onmouseover = function() {
         window.speechSynthesis.speak(new SpeechSynthesisUtterance(selection));
