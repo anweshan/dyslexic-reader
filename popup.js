@@ -19,7 +19,7 @@ function alertWithText() {
     var selectedText = getSelectedText().trim();
     if (selectedText) {
     	if (selectedText!=""){
-        alert("Got selected text |" + selectedText+ "|");
+        alert("You got selected text |" + selectedText+ "|");
     	}
     }
 }
