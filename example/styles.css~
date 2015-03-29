@@ -1,0 +1,110 @@
+/**
+One thing you'll notice about writing CSS is that a lot of it is about boxes:
+setting their size, color, position, etc. Most of the HTML elements on your page
+can be thought of as boxes sitting on top of each other.
+
+Not surprisingly, CSS layout is based principally on the box model. Each of the
+blocks taking up space on your page has properties like this:
+
+* padding, the space just around the content (e.g., around paragraph text)
+* border, the solid line that sits just outside the padding
+* margin, the space around the outside of the element
+* width (of an element)
+* height (of an element)
+
+
+**/
+
+/**
+We'll play around with more CSS to get a better understanding of the difference
+between margin, border, padding, and width/height. Check out the CSS below.
+**/
+
+
+/** UNCOMMENT ME
+html {
+    background-color: #00539F;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+UNCOMMENT ME **/
+
+
+/**
+
+Now for the body element. There are quite a few declarations here, so let's go
+through them all one by one:
+
+* width: 600px; — this forces the body to always be 600 pixels wide.
+* margin: 0 auto; — When you set two values on a property like margin or
+          padding, the first value affects the element's top and bottom side
+          (make it 0 in this case), and the second value the left and right side
+          (here, auto is a special value that divides the available horizontal
+          space evenly between left and right). You can also use one, three, or
+          four values, as documented here.
+* background-color: #FF9500; — as before, this sets the element's background
+                    color. I used a sort of reddish orange for the body as
+                    opposed to dark blue for the html element. Go ahead and
+                    experiment. Feel free to use white or whatever you like.
+* padding: 0 20px 20px 20px; — we have four values set on the padding, to make a
+           bit of space around our content. This time we are setting no padding
+           on the top of the body, and 20 pixels on the left, bottom and right.
+           The values set top, right, bottom, left, in that order.
+* border: 5px solid black; — this simply sets a 5 pixel wide solid black border
+          on all sides of the body.
+**/
+
+
+/** UNCOMMENT ME
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+}
+UNCOMMENT ME **/
+
+
+/**
+You may have noticed there's a horrible gap at the top of the body. That happens
+because browsers apply some default styling to the <h1> element (among others),
+even when you haven't applied any CSS at all! That might sound like a bad idea,
+but we want even an unstyled webpage to have basic readability. To get rid of
+the gap we overrode the default styling by setting margin: 0;.
+
+Next up, we've set the heading's top and bottom padding to 20 pixels, and made
+the heading text the same color as the html background color.
+
+Again, try experimenting with different values to see what you can come up with.
+**/
+
+/** UNCOMMENT ME
+img {
+    display: block;
+    margin: 0 auto;
+}
+UNCOMMENT ME **/
+
+/**
+Finally, we'll center the image to make it look better. We could use the
+margin: 0 auto trick again as we did earlier for the body, but we also need to
+do something else. The body element is block level, meaning it takes up space on
+the page and can have margin and other spacing values applied to it. Images, on
+the other hand, are inline elements, meaning they can't. So to apply margins to
+the image, we have to give the image block-level behavior using display: block;.
+
+This is the end of our HTML+CSS workshop! You've learned quite a bit about both
+HTML and CSS, how they work together, and how to make some cool pages from
+scratch. There's a lot more to learn, though. To find out more, check out these
+resources.
+
+* http://www.codecademy.com/en/tracks/web
+* https://developer.mozilla.org/en-US/Learn/HTML
+* https://developer.mozilla.org/en-US/Learn/CSS
+
+**/
