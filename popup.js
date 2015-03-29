@@ -20,10 +20,9 @@ function alertWithText() {
     if (selectedText) {
     	if (selectedText!=""){
         	alert("You got selected text |" + selectedText+ "|");
-        	window.speechSynthesis.speak(
-   		new SpeechSynthesisUtterance(selectedText)
-);
+        	window.speechSynthesis.speak( new SpeechSynthesisUtterance(selectedText));
     	}
     }
 }
+
 
