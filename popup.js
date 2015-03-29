@@ -30,10 +30,11 @@ function alertWithText() {
 
 function initHover(displaytext) {
     $('body')
-    .append(displaytext)
-       // .append('<div id="reddit-hover">displaytext</div>');
-    $('#reddit-hover')
+       .append('<div id="test"></div>');
+    $('#test')
         .show();
+        $('#test')
+        .append(displaytext)
 
 }
 
