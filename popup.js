@@ -19,11 +19,11 @@ function alertWithText() {
     var selectedText = getSelectedText().trim();
     if (selectedText) {
     	if (selectedText!=""){
-        alert("You got selected text |" + selectedText+ "|");
+        	alert("You got selected text |" + selectedText+ "|");
+        	window.speechSynthesis.speak(
+   		new SpeechSynthesisUtterance(selectedText)
+);
     	}
     }
 }
 
-window.speechSynthesis.speak(
-   new SpeechSynthesisUtterance("say something")
-);
