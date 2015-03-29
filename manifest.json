@@ -16,7 +16,9 @@
      "http://*/*",
      "https://*/*"
      ],
-     "js":["popup.js"]
+     "css": [
+     "style.css"],
+     "js":["popup.js", "jquery-2.1.3.js"]
    }
    ] ,
    "permissions": [

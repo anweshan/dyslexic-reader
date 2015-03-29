@@ -19,11 +19,21 @@ function alertWithText() {
     var selectedText = getSelectedText().trim();
     if (selectedText) {
     	if (selectedText!=""){
-        	alert("You got selected text |" + selectedText+ "|");
-        	window.speechSynthesis.speak(
-   		new SpeechSynthesisUtterance(selectedText)
-);
+            initHover(selectedText);
+        	//alert("You got selected text |" + selectedText+ "|");
+        	//window.speechSynthesis.speak(
+   		//new SpeechSynthesisUtterance(selectedText)
+//);
     	}
     }
+}
+
+function initHover(displaytext) {
+    $('body')
+    .append(displaytext)
+       // .append('<div id="reddit-hover">displaytext</div>');
+    $('#reddit-hover')
+        .show();
+
 }
 
