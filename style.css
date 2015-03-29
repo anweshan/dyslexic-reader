@@ -1,60 +1,12 @@
-/*div#test {
-    background-color: lightgrey;
+.selection_bubble {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
     width: 300px;
     padding: 25px;
     border: 25px solid navy;
     margin: 25px;
+  background:-webkit-gradient(linear, left top, left bottom, from(#2e88c4), to(#075698));
 }
-*/
-    body{
-        padding-left: 20px;
-      }
-      .Slide_Label_Gap:before {
-        display: block;
-        position: absolute;
-        top: -20px;
-        left: 0;
-        content: "";
-        width: 100%;
-        height: 20px;
-        box-shadow: 0px 7px 10px -5px #000;
-      }
-      #previewA {
-        background: #FFF;
-        padding-top: 10px;
-        padding-bottom: 1px;
-        box-shadow: 0px 3px 10px -1px #333;
-      }
-      #previewB {
-        background: #FFF;
-        padding-top: 5px;
-        border: 3px dashed #F80;
-        border-top: 0px;
-        color: #F80;
-        text-align: center;
-      }
-      #myWords {
-        position: relative;
-        width: 128px;
-        margin: 11px;
-        border: 1px solid #BBB;
-        border-radius: 3px;
-      }
-      #myWords:before {
-        position: absolute;
-        top: -20px;
-        left: 25%;
-        margin-left: -10px;
-        border: 10px solid transparent;
-        border-bottom: 10px solid #BBB;
-        content: "";
-      }
-      #myWords:after {
-        position: absolute;
-        top: -16px;
-        left: 25%;
-        margin-left: -8px;
-        border: 8px solid transparent;
-        border-bottom: 10px solid #FFF;
-        content: "";
-      }
