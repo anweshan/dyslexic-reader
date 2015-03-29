@@ -16,8 +16,10 @@ function getSelectedText() {
 }
 
 function alertWithText() {
-    var selectedText = getSelectedText();
+    var selectedText = getSelectedText().trim();
     if (selectedText) {
-        alert("Got selected text " + selectedText);
+    	if (selectedText!=""){
+        alert("Got selected text |" + selectedText+ "|");
+    	}
     }
 }
