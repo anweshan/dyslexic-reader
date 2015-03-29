@@ -32,7 +32,7 @@ function initHover(displaytext) {
 $('body')
        .append('<div id="myLink"></div>');
     $('#myLink')
-        .show();
+        .append(displaytext);
 }
 
  $(document).ready(function(){
