@@ -20,7 +20,19 @@ document.addEventListener('mousedown', function (e) {
 
 // Move that bubble to the appropriate location.
 function renderBubble(mouseX, mouseY, selection) {
-  bubbleDOM.innerHTML = selection + "ADD ALL YOUR STUFF HERE GUISSSSSSSSSSSSSSSSSSSS LESS THAN TWO HOURS LEFT WE GON DIE";
+  bubbleDOM.innerHTML = selection + '<img id="sound" src="http://png-5.findicons.com/files/icons/770/token_dark/256/sound.png " style="width:10px;height:10px">';
+window.onload = function() {
+      document.getElementById("sound").onclick = function() {
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance(selection));
+      };
+   };
+	/*		document.getElementById("sound").onclick = function() {
+			    
+			        window.speechSynthesis.speak(new SpeechSynthesisUtterance(selection));
+			     
+			};
+*/
+
   bubbleDOM.style.top = mouseY + 'px';
   bubbleDOM.style.left = mouseX + 'px';
   bubbleDOM.style.visibility = 'visible';
