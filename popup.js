@@ -29,12 +29,14 @@ function alertWithText() {
 }
 
 function initHover(displaytext) {
-    $('body')
-       .append('<div id="test"></div>');
-    $('#test')
+$('body')
+       .append('<div id="myLink"></div>');
+    $('#myLink')
         .show();
-        $('#test')
-        .append(displaytext)
-
 }
+
+ $(document).ready(function(){
+        $('#myLink').Slide_Label($("<div id='previewA' style='width: 150px; text-align: center'><img src='mingchoi.na.png' width='128' height='128' /><div id='myWords'> This is a Slide Label which made of div element, you can add any HTML5 element like text, photo, music and video inside.</div></div>"));
+        $('#myLink2').Slide_Label($('<div>', {id: 'previewB', style: 'width: 150px'}).append($('<h4>(ノﾟ∀ﾟ)ノ⌒☆</h4>')));
+      });
 
