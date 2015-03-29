@@ -1,1 +1,1 @@
-alert("hi")
+window.addEventListener("mouseup", function(event) { alert("hi")});
