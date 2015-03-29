@@ -25,5 +25,5 @@ function alertWithText() {
 }
 
 window.speechSynthesis.speak(
-   new SpeechSynthesisUtterance("Got selected text |" + selectedText+ "|")
+   new SpeechSynthesisUtterance("say something")
 );
