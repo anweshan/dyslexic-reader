@@ -21,7 +21,7 @@ document.addEventListener('mousedown', function (e) {
 // Move that bubble to the appropriate location.
 function renderBubble(mouseX, mouseY, selection) {
   bubbleDOM.innerHTML = selection + '<img id="sound" src="http://png-5.findicons.com/files/icons/770/token_dark/256/sound.png " style="width:30px;height:30px">'+
-  '<img id="test" src="http://upload.wikimedia.org/wikipedia/en/6/6f/KennyMcCormick.png" style="width:120px;height:120px">' ;
+  '<img id="test" src="http://img1.wikia.nocookie.net/__cb20140410195944/pokemon/images/archive/f/fc/20150101093541!025Pikachu_OS_anime_5.png" style="width:120px;height:120px">' ;
 
       document.getElementById("sound").onmouseover = function() {
         window.speechSynthesis.speak(new SpeechSynthesisUtterance(selection));
